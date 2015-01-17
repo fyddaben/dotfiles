@@ -11,7 +11,7 @@ my vimrc config info
 cd $HOME
 ln -s dotfiles/vimrc .vimrc
 ```
-< 这里需要注意先建立一个空文件，然后指向`home`下的`.vimrc`.然后再进行修改配置文件，这样就能保证配置文件的同步了
+<这里需要注意先建立一个空文件，然后指向`home`下的`.vimrc`.然后再进行修改配置文件，这样就能保证配置文件的同步了
 
 
 #### 番外篇
