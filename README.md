@@ -1,11 +1,6 @@
 # dotfiles
 my vimrc config info
 
-
-
-
-
-
 ### 建立软连接
 ```
 cd $HOME
