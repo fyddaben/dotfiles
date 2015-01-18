@@ -20,9 +20,9 @@ Plugin 'groenewege/vim-less'
 "zencoding
 Plugin 'mattn/emmet-vim'
 "状体栏
-Plugin 'edkolev/tmuxline.vim'
-Plugin 'bling/vim-airline'
-Plugin 'itchyny/lightline.vim'
+"Plugin 'edkolev/tmuxline.vim'
+"Plugin 'bling/vim-airline'
+"Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-markdown'
 "tmux copy
 Plugin 'tmux-plugins/tmux-yank'
@@ -38,6 +38,8 @@ syntax on
 set noerrorbells 
 " 设置行号
 "set number
+" 打开状态栏标尺
+set ruler 
 "设置编码
 set encoding=utf-8
 set fileencoding=utf-8
@@ -65,6 +67,8 @@ set listchars=tab:┊\
 
 "显示搜索内容
 set hlsearch
+"输入搜索内容时就显示搜索结果
+set incsearch
 "" autocmd
 " 垂直线
 set cursorcolumn
@@ -74,19 +78,20 @@ set cursorcolumn
 
 "status bar
 "
-let g:tmuxline_preset = {
-      \'a'    : '#(gitbranch)',
-      \'c'    : ['#(whoami)', '#(uptime | cud -d " " -f 1,2,3)'],
-      \'win'  : ['#I', '#W'],
-      \'cwin' : ['#I', '#W', '#F'],
-      \'x'    : '#(filename)',
-      \'y'    : ['%R', '%a', '%Y'],
-      \'z'    : '#H'}
 
-let g:tmuxline_powerline_separators = 0
-let g:tmuxline_separators = {
-    \ 'left' : '>',
-    \ 'left_alt': '>',
-    \ 'right' : '<',
-    \ 'right_alt' : '<',
-    \ 'space' : ' '}
+"let g:tmuxline_preset = {
+"      \'a'    : '#(gitbranch)',
+"      \'c'    : ['#(whoami)', '#(uptime | cud -d " " -f 1,2,3)'],
+"      \'win'  : ['#I', '#W'],
+"      \'cwin' : ['#I', '#W', '#F'],
+"      \'x'    : '#(filename)',
+"      \'y'    : ['%R', '%a', '%Y'],
+"      \'z'    : '#H'}
+
+"let g:tmuxline_powerline_separators = 0
+"let g:tmuxline_separators = {
+"    \ 'left' : '>',
+"    \ 'left_alt': '>',
+"    \ 'right' : '<',
+"    \ 'right_alt' : '<',
+"    \ 'space' : ' '}
