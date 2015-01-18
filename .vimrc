@@ -6,7 +6,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " Vundle包管理 start
-" defalut
+"" defalut
 Plugin 'gmarik/Vundle.vim'
 " 颜色主题包
 Plugin 'flazz/vim-colorschemes'
@@ -14,6 +14,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'jelera/vim-javascript-syntax'
 " coffeescript 
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'pangloss/vim-javascript'
 " less
 Plugin 'groenewege/vim-less'
 "zencoding
@@ -22,7 +23,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'bling/vim-airline'
 Plugin 'itchyny/lightline.vim'
-
+Plugin 'tpope/vim-markdown'
 "tmux copy
 Plugin 'tmux-plugins/tmux-yank'
 " Vundle包管理 end
@@ -32,13 +33,19 @@ filetype plugin indent on    " required
 "语法开关
 syntax on
 "自动存档
-set autowrite
+"set autowrite
+"不让vim 发出讨厌的滴滴声
+set noerrorbells 
 " 设置行号
 "set number
 "设置编码
 set encoding=utf-8
 set fileencoding=utf-8
 set fileformats=unix,dos,mac
+"自动缩进
+set smarttab
+"搜索忽略大小写
+set ignorecase
 "设置tab长度
 set expandtab
 set softtabstop=4
@@ -51,19 +58,18 @@ colorscheme  badWolf
 "禁止生成临时文件
 set nobackup
 set noswapfile
-" 粘贴后混乱indent的bug
-"set pastetoggle=<F2>
 
-"tmux 颜色配置
-"set term=screen-256color
-" 底部status bar
-
-set nocompatible   " Disable vi-compatibility
-"set laststatus=2   " Always show the statusline
-"let g:Powerline_symbols = 'fancy'
 " 显示indent
 set list
 set listchars=tab:┊\ 
+
+"显示搜索内容
+set hlsearch
+"" autocmd
+" 垂直线
+set cursorcolumn
+
+
 
 
 "status bar
