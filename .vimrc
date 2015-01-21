@@ -40,6 +40,8 @@ set noerrorbells
 "set number
 " 打开状态栏标尺
 set ruler 
+" 设置折叠方式
+set foldmethod=manual
 "设置编码
 set encoding=utf-8
 set fileencoding=utf-8
