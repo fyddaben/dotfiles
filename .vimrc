@@ -74,6 +74,8 @@ set incsearch
 "" autocmd
 " 垂直线
 set cursorcolumn
+" 设置Ctrl+P 为粘贴
+set pastetoggle=<c-p>
 
 
 
