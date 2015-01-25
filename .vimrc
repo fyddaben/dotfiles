@@ -14,6 +14,8 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'jelera/vim-javascript-syntax'
 " coffeescript 
 Plugin 'kchmck/vim-coffee-script'
+"html5
+Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
 " less
 Plugin 'groenewege/vim-less'
