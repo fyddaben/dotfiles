@@ -28,6 +28,9 @@ Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-markdown'
 "tmux copy
 Plugin 'tmux-plugins/tmux-yank'
+"editorConfig
+Plugin 'editorconfig/editorconfig-vim'
+
 " Vundle包管理 end
 call vundle#end()            " required
 filetype plugin indent on    " required
