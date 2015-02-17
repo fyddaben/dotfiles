@@ -16,6 +16,9 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'kchmck/vim-coffee-script'
 "html5
 Plugin 'othree/html5.vim'
+"Ctrlp(全局查找)
+Plugin 'kien/ctrlp.vim'
+
 Plugin 'pangloss/vim-javascript'
 " less
 Plugin 'groenewege/vim-less'
@@ -82,7 +85,6 @@ set cursorcolumn
 " 设置Ctrl+P 为粘贴
 "set pastetoggle=<c-p>
 set pastetoggle=<F2>
-
 
 
 "status bar
