@@ -46,6 +46,7 @@ syntax on
 set noerrorbells 
 " 设置行号
 set nonumber
+
 " 打开状态栏标尺
 set ruler 
 " 设置折叠方式
@@ -64,7 +65,7 @@ set softtabstop=4
 set shiftwidth=4
 "设置主题,参考网站http://vimcolorschemetest.googlecode.com/svn/html/index-html.html
 set t_Co=256
-colorscheme  badWolf 
+colorscheme  badwolf 
 " 唤醒JS标记
 "au FileType javascript call JavaScriptFold()
 "禁止生成临时文件
@@ -87,7 +88,6 @@ set cursorcolumn
 set pastetoggle=<F2>
 " 忽略node_modules的查找
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
-
 "status bar
 "
 
