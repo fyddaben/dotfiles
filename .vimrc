@@ -85,7 +85,8 @@ set cursorcolumn
 " 设置Ctrl+P 为粘贴
 "set pastetoggle=<c-p>
 set pastetoggle=<F2>
-
+" 忽略node_modules的查找
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 "status bar
 "
