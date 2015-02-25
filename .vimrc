@@ -45,7 +45,7 @@ syntax on
 "不让vim 发出讨厌的滴滴声
 set noerrorbells 
 " 设置行号
-"set number
+set nonumber
 " 打开状态栏标尺
 set ruler 
 " 设置折叠方式
