@@ -18,7 +18,8 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'othree/html5.vim'
 "Ctrlp(全局查找)
 Plugin 'kien/ctrlp.vim'
-
+" 记录本地历史
+Plugin 'vim-scripts/Gundo'
 Plugin 'pangloss/vim-javascript'
 " less
 Plugin 'groenewege/vim-less'
@@ -87,6 +88,13 @@ set cursorcolumn
 set pastetoggle=<F2>
 " 忽略node_modules的查找
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+" 开启本地记录
+nnoremap <F5> :GundoToggle<CR>
+"backup
+set undodir=~/.vim/tmp/undo//
+set undofile
+set history=100
+set undolevels=100
 
 "status bar
 "
