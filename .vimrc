@@ -66,7 +66,7 @@ set softtabstop=4
 set shiftwidth=4
 "设置主题,参考网站http://vimcolorschemetest.googlecode.com/svn/html/index-html.html
 set t_Co=256
-colorscheme  gentooish 
+colorscheme  badwolf 
 " 唤醒JS标记
 "au FileType javascript call JavaScriptFold()
 "禁止生成临时文件
