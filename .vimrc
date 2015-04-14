@@ -34,6 +34,8 @@ Plugin 'tpope/vim-markdown'
 Plugin 'tmux-plugins/tmux-yank'
 "editorConfig
 Plugin 'editorconfig/editorconfig-vim'
+"自动补全
+Plugin 'ervandew/supertab'
 
 " Vundle包管理 end
 call vundle#end()            " required
