@@ -78,9 +78,16 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 #alias ohmyzsh="mate ~/.oh-my-zsh"
- alias tx="tmux"
- alias e="/usr/bin/vim"
-
+alias tx="tmux"
+alias e="/usr/bin/vim"
+ 
 # 同步tmux打开的时候的颜色
 export TERM=xterm-256color
 [ -n "$TMUX" ] && export TERM=screen-256color
+
+# 打开terminal 自动执行boot2docker
+$(boot2docker shellinit 2> /dev/null)
+
+
+
+
