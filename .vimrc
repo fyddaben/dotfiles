@@ -65,6 +65,7 @@ set ignorecase
 "设置tab长度
 set expandtab
 set softtabstop=4
+set tabstop=4
 set shiftwidth=4
 "设置主题,参考网站http://vimcolorschemetest.googlecode.com/svn/html/index-html.html
 set t_Co=256
