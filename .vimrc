@@ -36,6 +36,10 @@ Plugin 'tmux-plugins/tmux-yank'
 Plugin 'editorconfig/editorconfig-vim'
 "自动补全
 Plugin 'ervandew/supertab'
+"快速查找
+Plugin 'Lokaltog/vim-easymotion'
+
+
 
 " Vundle包管理 end
 call vundle#end()            " required
