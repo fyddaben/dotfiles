@@ -16,6 +16,8 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'kchmck/vim-coffee-script'
 "html5
 Plugin 'othree/html5.vim'
+" 多文件搜索
+Plugin 'dkprice/vim-easygrep'
 "Ctrlp(全局查找)
 Plugin 'kien/ctrlp.vim'
 " 记录本地历史
@@ -25,6 +27,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'groenewege/vim-less'
 "zencoding
 Plugin 'mattn/emmet-vim'
+" 语法检查
+Plugin 'scrooloose/syntastic'
 "状体栏
 "Plugin 'edkolev/tmuxline.vim'
 "Plugin 'bling/vim-airline'
@@ -88,6 +92,8 @@ set listchars=tab:┊\
 set hlsearch
 "输入搜索内容时就显示搜索结果
 set incsearch
+" 设置相对行数
+set relativenumber
 "" autocmd
 " 垂直线
 set cursorcolumn
@@ -103,6 +109,26 @@ set undodir=~/.vim/tmp/undo//
 set undofile
 set history=100
 set undolevels=100
+" 修改leader 默认键
+let mapleader = "," 
+let g:mapleader = "," 
+
+" 语法检查
+let g:syntastic_less_options = "--no-color"
+" npm install -g recess
+let g:syntastic_less_checkers = ['recess']
+" npm install -g jshint 
+let g:syntastic_js_checkers = ['jshint']
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0 
+let g:syntastic_check_on_wq = 0
+
+
 
 
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
