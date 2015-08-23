@@ -12,7 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'flazz/vim-colorschemes'
 " JS 标记语法
 Plugin 'jelera/vim-javascript-syntax'
-" coffeescript 
+" coffeescript
 Plugin 'kchmck/vim-coffee-script'
 "html5
 Plugin 'othree/html5.vim'
@@ -29,7 +29,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'mattn/emmet-vim'
 " 语法检查
 "Plugin 'walm/jshint.vim'
-"Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 "状体栏
 "Plugin 'edkolev/tmuxline.vim'
 "Plugin 'bling/vim-airline'
@@ -55,12 +55,12 @@ syntax on
 "自动存档
 "set autowrite
 "不让vim 发出讨厌的滴滴声
-set noerrorbells 
+set noerrorbells
 " 设置行号
 set nonumber
 
 " 打开状态栏标尺
-set ruler 
+set ruler
 " 设置折叠方式
 set foldmethod=manual
 "设置编码
@@ -78,7 +78,7 @@ set tabstop=4
 set shiftwidth=4
 "设置主题,参考网站http://vimcolorschemetest.googlecode.com/svn/html/index-html.html
 set t_Co=256
-colorscheme  badwolf 
+colorscheme  badwolf
 " 唤醒JS标记
 "au FileType javascript call JavaScriptFold()
 "禁止生成临时文件
@@ -87,7 +87,7 @@ set noswapfile
 
 " 显示indent
 set list
-set listchars=tab:┊\ 
+set listchars=tab:┊\
 
 "显示搜索内容
 set hlsearch
@@ -113,28 +113,28 @@ set undofile
 set history=100
 set undolevels=100
 " 修改leader 默认键
-let mapleader = "," 
-let g:mapleader = "," 
+let mapleader = ","
+let g:mapleader = ","
 
 " 语法检查
-" npm install -g jshint 
+" npm install -g jshint
 " npm install -g jscs
-"let g:syntastic_javascript_jshint_args= '--config '.$HOME.'/.jshintrc'
-"let g:syntastic_javascript_jscs_args = '--config '.$HOME.'/.jscsrc'  
-"let g:syntastic_javascript_checkers = ['jscs','jshint']
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
+let g:syntastic_javascript_jshint_args= '--config '.$HOME.'/.jshintrc'
+let g:syntastic_javascript_jscs_args = '--config '.$HOME.'/.jscsrc'
+let g:syntastic_javascript_checkers = ['jscs','jshint']
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 "
-"let g:syntastic_always_populate_loc_list = 1 
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 0 
-"let g:syntastic_check_on_wq = 0
-" 用作只检查js文件
-"let g:syntastic_mode_map = {
-"        \'mode': 'passive',
-"        \ 'active_filetypes': ['javascript'],
-"        \ 'passive_filetypes': [] }
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+"用作只检查js文件
+let g:syntastic_mode_map = {
+        \'mode': 'passive',
+        \ 'active_filetypes': ['javascript'],
+        \ 'passive_filetypes': [] }
 
 "设置遍历查找默认循环子集
 let g:EasyGrepRecursive=1

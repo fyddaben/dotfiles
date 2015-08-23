@@ -1,6 +1,6 @@
 {
   "preset": "airbnb",
-  "excludeFiles": ["node_modules/**", "js/lib/**", "js/product/**"],
+  "excludeFiles": ["node_modules/**"],
   "disallowMultipleVarDecl": "exceptUndefined",
   "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
   "requirePaddingNewLinesAfterBlocks": null,
