@@ -1,0 +1,27 @@
+{
+  "browser": true,
+  "jquery": true,
+  "node": true,
+  "camelcase": false,
+  "eqeqeq": true,
+  "latedef": true,
+  "newcap": true,
+  "quotmark": "single",
+  "undef": true,
+  "unused": true,
+  "eqnull": true,
+  "devel": true,
+  "forin": true,
+  "freeze": true,
+  "immed": true,
+  "noarg": true,
+  "scripturl": true,
+  "strict": false,
+  "globals": {
+      "doT": false,
+      "servertime": true,
+      "multiline": false,
+      "MI": true,
+      "_msq": true
+  }
+}

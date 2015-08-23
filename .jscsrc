@@ -1,0 +1,8 @@
+{
+  "preset": "airbnb",
+  "excludeFiles": ["node_modules/**", "js/lib/**", "js/product/**"],
+  "disallowMultipleVarDecl": "exceptUndefined",
+  "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
+  "requirePaddingNewLinesAfterBlocks": null,
+  "maximumLineLength": 120
+}

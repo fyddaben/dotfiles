@@ -28,7 +28,8 @@ Plugin 'groenewege/vim-less'
 "zencoding
 Plugin 'mattn/emmet-vim'
 " 语法检查
-Plugin 'scrooloose/syntastic'
+"Plugin 'walm/jshint.vim'
+"Plugin 'scrooloose/syntastic'
 "状体栏
 "Plugin 'edkolev/tmuxline.vim'
 "Plugin 'bling/vim-airline'
@@ -93,7 +94,9 @@ set hlsearch
 "输入搜索内容时就显示搜索结果
 set incsearch
 " 设置相对行数
+
 set relativenumber
+set number
 "" autocmd
 " 垂直线
 set cursorcolumn
@@ -114,19 +117,24 @@ let mapleader = ","
 let g:mapleader = "," 
 
 " 语法检查
-let g:syntastic_less_options = "--no-color"
-" npm install -g recess
-let g:syntastic_less_checkers = ['recess']
 " npm install -g jshint 
-let g:syntastic_js_checkers = ['jshint']
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0 
-let g:syntastic_check_on_wq = 0
+" npm install -g jscs
+"let g:syntastic_javascript_jshint_args= '--config '.$HOME.'/.jshintrc'
+"let g:syntastic_javascript_jscs_args = '--config '.$HOME.'/.jscsrc'  
+"let g:syntastic_javascript_checkers = ['jscs','jshint']
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"
+"let g:syntastic_always_populate_loc_list = 1 
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 0 
+"let g:syntastic_check_on_wq = 0
+" 用作只检查js文件
+"let g:syntastic_mode_map = {
+"        \'mode': 'passive',
+"        \ 'active_filetypes': ['javascript'],
+"        \ 'passive_filetypes': [] }
 
 "设置遍历查找默认循环子集
 let g:EasyGrepRecursive=1
