@@ -29,14 +29,14 @@ Plugin 'groenewege/vim-less'
 Plugin 'mattn/emmet-vim'
 " 语法检查
 "Plugin 'walm/jshint.vim'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 "状体栏
 "Plugin 'edkolev/tmuxline.vim'
 "Plugin 'bling/vim-airline'
 "Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-markdown'
 "tmux copy
-Plugin 'tmux-plugins/tmux-yank'
+"Plugin 'tmux-plugins/tmux-yank'
 "editorConfig
 Plugin 'editorconfig/editorconfig-vim'
 "自动补全
@@ -119,22 +119,22 @@ let g:mapleader = ","
 " 语法检查
 " npm install -g jshint
 " npm install -g jscs
-let g:syntastic_javascript_jshint_args= '--config '.$HOME.'/.jshintrc'
-let g:syntastic_javascript_jscs_args = '--config '.$HOME.'/.jscsrc'
-let g:syntastic_javascript_checkers = ['jscs','jshint']
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-"
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-"用作只检查js文件
-let g:syntastic_mode_map = {
-        \'mode': 'passive',
-        \ 'active_filetypes': ['javascript'],
-        \ 'passive_filetypes': [] }
+"let g:syntastic_javascript_jshint_args= '--config '.$HOME.'/.jshintrc'
+"let g:syntastic_javascript_jscs_args = '--config '.$HOME.'/.jscsrc'
+"let g:syntastic_javascript_checkers = ['jscs','jshint']
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+""
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 0
+"let g:syntastic_check_on_wq = 0
+""用作只检查js文件
+"let g:syntastic_mode_map = {
+"        \'mode': 'passive',
+"        \ 'active_filetypes': ['javascript'],
+"        \ 'passive_filetypes': [] }
 
 "设置遍历查找默认循环子集
 let g:EasyGrepRecursive=1
