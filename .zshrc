@@ -86,7 +86,7 @@ export TERM=xterm-256color
 [ -n "$TMUX" ] && export TERM=screen-256color
 
 # 打开terminal 自动执行boot2docker
-$(boot2docker shellinit 2> /dev/null)
+#$(boot2docker shellinit 2> /dev/null)
 
 
 

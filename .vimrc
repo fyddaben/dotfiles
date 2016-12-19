@@ -13,11 +13,11 @@ Plugin 'flazz/vim-colorschemes'
 " JS 标记语法
 Plugin 'jelera/vim-javascript-syntax'
 " coffeescript
-Plugin 'kchmck/vim-coffee-script'
+"Plugin 'kchmck/vim-coffee-script'
 "html5
 Plugin 'othree/html5.vim'
 " 多文件搜索
-Plugin 'dkprice/vim-easygrep'
+"Plugin 'dkprice/vim-easygrep'
 "Ctrlp(全局查找)
 Plugin 'kien/ctrlp.vim'
 " 记录本地历史
@@ -42,7 +42,12 @@ Plugin 'editorconfig/editorconfig-vim'
 "自动补全
 Plugin 'ervandew/supertab'
 "快速查找
-Plugin 'Lokaltog/vim-easymotion'
+"Plugin 'Lokaltog/vim-easymotion'
+"微信
+Plugin 'chemzqm/wxapp.vim'
+"vue
+"Plugin 'darthmall/vim-vue' 
+Plugin 'tao12345666333/vim-vue'
 
 
 
@@ -107,6 +112,7 @@ set pastetoggle=<F2>
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 " 开启本地记录
 nnoremap <F5> :GundoToggle<CR>
+
 "backup
 set undodir=~/.vim/tmp/undo//
 set undofile
@@ -115,6 +121,9 @@ set undolevels=100
 " 修改leader 默认键
 let mapleader = ","
 let g:mapleader = ","
+
+set wildmenu wildmode=full 
+set wildchar=<Tab> wildcharm=<C-Z>
 
 " 语法检查
 " npm install -g jshint
@@ -158,6 +167,7 @@ let g:EasyMotion_smartcase = 1
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
+noremap <c-b> :b <c-z>
 
 
 "status bar
